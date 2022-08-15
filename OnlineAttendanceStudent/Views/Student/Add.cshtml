@@ -1,0 +1,28 @@
+﻿@model OnlineAttendanceStudent.Models.AddStudents
+
+@{
+}
+<h3>Add Students</h3>
+<form method="post" action="Add"  class="mt-5">
+  <div class="row mb-3">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="Name">
+  </div>
+   <div class="row mb-3">
+    <label for="" class="form-label">Email</label>
+     <input type="text" class="form-control" asp-for="Email">
+   </div>
+  <div class="row mb-3">
+    <label for="" class="form-label">Department</label>
+    <input type="text" class="form-control" asp-for="Department">
+  </div>
+ 
+ 
+   
+  <button type="submit" class="btn btn-success">Submit</button>
+  <br/>
+  <br />
+  <div class="col">
+        <a class="btn btn-primary" asp-controller="Student" asp-action="Index">Student List</a>
+    </div>
+</form>

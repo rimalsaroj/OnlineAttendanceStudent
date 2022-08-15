@@ -1,0 +1,31 @@
+﻿@model List<OnlineAttendanceStudent.Models.Domain.Student>
+
+@{
+}
+
+<h2>Student List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department </th>
+            <th></th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>@student.Department</td>
+                <td><a href="Student/View/@student.Id">View</a></td>
+            
+            </tr>
+        }
+    </tbody>
+</table>
